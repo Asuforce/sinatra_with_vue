@@ -7,7 +7,7 @@ class MyApp < Sinatra::Base
   end
 
   get "/" do
-    'Hello world!'
+    'hello, world!'
   end
 
   run! if app_file == $0
