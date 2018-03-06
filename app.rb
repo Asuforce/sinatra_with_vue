@@ -1,5 +1,6 @@
 require "sinatra/base"
 require "sinatra/reloader"
+require "slim"
 
 class MyApp < Sinatra::Base
   configure :development do
@@ -7,7 +8,7 @@ class MyApp < Sinatra::Base
   end
 
   get "/" do
-    'hello, world!'
+    slim :index
   end
 
   run! if app_file == $0
