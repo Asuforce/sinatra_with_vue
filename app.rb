@@ -8,6 +8,7 @@ class MyApp < Sinatra::Base
   end
 
   get "/" do
+    @message = 'This is MyApp'
     slim :index
   end
 
