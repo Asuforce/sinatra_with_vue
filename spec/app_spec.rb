@@ -6,8 +6,4 @@ describe "My Sinatra Application" do
   it "should allow accessing the home page" do
     expect(last_response).to be_ok
   end
-
-  it "should discribe message" do
-    expect(last_response.body).to include('This is MyApp')
-  end
 end
